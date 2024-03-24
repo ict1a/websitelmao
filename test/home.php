@@ -1,0 +1,127 @@
+<?php 
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['email'])) {
+
+ ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Eclaro Academy</title>
+   <link rel="icon" href="icon.jpeg" type="image/x-icon">
+   <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+   <header>
+      <a href="index.html">
+         <h2 class="logo"></h2>
+     </a>
+       <nav class="navigation">
+          <a href="home.php">Home</a>
+          <a href="dashboard.php">Dashboard</a>
+          <a href="first_page.php">Enroll</a>
+          <a href="contact.php">Contact Us</a>
+          <a href="logout.php">Log Out</a>
+       </nav>
+   </header>
+
+   <main id="content">
+    <div class="about">
+      <h1>About Our School</h1>
+
+    <p>ECLARO ACADEMY IS AN INNOVATIVE, DIGITALLY FOCUSED LEARNING FACILITY WITH<br> A STUDENT-CENTERED INSTRUCTIONAL STYLE. THE SCHOOL BELIEVES<br> IN THE PROGRESSIVE LEARNING PHILOSOPHY, WHICH STRESSES<br> EXPLORATION, CREATIVITY, KNOWLEDGE CONSTRUCTION, <br>AND GENUINE CONCERN FOR THE STUDENT'S EXPERIENCE, ALLOWING EVERY<br> ECLARO ENROLLEE TO CREATE A COMPREHENSIVE PERSONALITY.</p>
+
+   </div>
+   <br>
+      <div class="valuesr">
+           <div class="values">           
+             <h4>MISSION</h4>
+            <p>To transform the knowledge, <br>skills, and attitudes of learners <br>in order to become holistic individual and useful members of a fast-changing global community.
+          </div>
+            <div class="values">
+              <h4>VISION</a></h4>
+              <p>To be among Asia's top academic institution <br>committed to nurture innovative learners and develop excellent leaders through technology- oriented, <br>environmentally-sound,<br> and globally competitive education.
+            </div>
+      </div>
+            <br>
+        <div class="evalues">
+         <div class="cvalues" name="core values">
+          <h4>CORE VALUES</h4>
+          <p>INTEGRITY
+          <p>SERVICES
+          <p>EFFECTIVENESS
+          <p>EMPATHY</div>  
+          </div>
+        </div>
+        <h2>STRAND OFFERED</h2>
+          <div class="eclass"> 
+            
+
+          <div class="strands"><h4>STEM</a></h4>
+            <p>The (STEM) strand is an inquiry       <br>and research-based program for Senior High School. The learners are inclined to researches which will give them the edge to become excellent in the pursuit of their college degrees.</p>
+          </div>
+        <div class="strands"><h4>HUMSS</h4>
+          <p>(HUMS) is short for humanities and social sciences. It is an academic strand covering various fields that deal with the exploration of the human condition using analytical, critical, and empirical ways - and thereby studying changes in society and human behavior.
+          </p></div>
+        <div class="strands"><h4>GAS</h4>
+          <p>General Academic Strand (GAS) caters students who are not yet sure of what course or degree they want to take in college. This strand was designed so that indecisive learners can proceed with any college program.
+          </p></div>
+          
+         <div class="strands"><h4>ABM</a></h4>
+          <p>The Accountancy, Business and Management (ABM) strand would focus on the basic concepts of financial management, business management, corporate operations, and all things that are accounted for.
+
+          </p></div>
+        <div class="strands"><h4>ICT</h4>
+          <p>Information Communication and Technology or (ICT) Strand is one of the strands offered under Technical-Vocational Livelihood (TVL) Track of K-12 curriculum. ICT strand subjects seek to teach students concepts and skills in information technology.</p>
+        </div>
+        <div class="strands"><h4>HE</a></h4>
+          <p>The Home Economics track (HE) offers various specializations that can lead to livelihood projects at home. This strand aims to give you job-ready skills that can help you in finding the right employment.</p>
+        </div>
+      </div>
+          </div>
+        <br>
+        <div class="ehymn">
+         <div class="hymn"><h4>ECLARO HYMN</h4>
+          <p>Lead, lead us forward Eclaro<br> Towards enlightenment <br>we aim Your guiding<br> light give us the power World-class education,<br> we proclaim!
+
+            (Chorus)
+            
+            Eclaro, hold high your flag Symbol of honor and truth Let it fly for us to see!<br> Proud sons and daughters we all are In the quest for knowledge unified We trust that you're always there to guide!
+            
+            To your values and standards Our heads we bow so gratefully<br> We'll keep alive all the values you teach You ever priceless legacy!
+            
+            (Chorus)
+            
+            Eclaro, hold high your flag Symbol of honor and truth <br>Let it fly for us to see! Proud sons and daughters we all are In the quest for knowledge unified We trust that you're always there to guide!
+            
+            Eclaro. Eclaro. Eclaro</p></div>  
+           </div>
+        </div>
+
+        <br>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ANSARAP MO GIRON</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+</main>
+    
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
+
+<?php 
+}else{
+     header("Location: index.html");
+     exit();
+}
+ ?>

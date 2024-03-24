@@ -1,0 +1,284 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Choose a professional font family */
+  }
+
+
+/* Responsive Background */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 100%; /* Adjusted background size for smaller screens */
+    }
+}
+
+/* Header Styles */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header.header-hidden {
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+}
+
+/* Logo Styles */
+.logo {
+    background: url('logo.jpeg') no-repeat; 
+    width: 100px; 
+    height: 130px;
+    background-size: contain;
+    user-select: none;
+}
+
+/* Navigation Styles */
+.navigation a {
+    position: relative;
+    font-size: 1.5em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.9rem; /* Adjusted margin for responsiveness */
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    bottom: -6px;
+    width: 150px;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    margin-right: 15px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation a:hover {
+    background: #506882;
+    color: #C5FFFA;
+}
+
+/* Login Button Styles */
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #020101;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #000;
+    margin-left: 2rem;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #506882;
+    color: #C5FFFA;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .container {
+    padding: 0 30px; /* Adjust padding for better spacing */
+    margin: 0 auto;
+    max-width: 1140px; /* Wider max-width for larger screens */
+  }
+  
+  /* Contatti Section Styles */
+  #contatti {
+    /*background-color: #343a40; */
+    background: url('ily.png') no-repeat center; 
+    background-position: center 90%;
+  /* Darker and more professional background color */
+    color: #fff; /* Use white text for better contrast */
+    letter-spacing: 1px; /* Slightly less letter-spacing for readability */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    overflow-y: auto;
+    padding: 40px; /* Increase padding for better spacing */
+    box-sizing: border-box;
+  }
+  
+  .mt-5 {
+    margin-top: 5rem!important;
+  }
+  
+  /* Contact Us Styles */
+  .col-md-6.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .col-md-6 {
+    padding: 20px;
+  }
+  
+  h2.text-uppercase.mt-3.font-weight-bold {
+    color: inherit; /* Use inherited white color */
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    font-size: 1.2rem; /* Adjust font size slightly for better hierarchy */
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Add space between form elements */
+  }
+  
+  .col-lg-6 {
+    padding: 1rem;
+    width: 48%; /* Adjust width for a more balanced form */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  .messageemail {
+        width: 407%;  /* Ensure full width (from previous tip) */
+        height: 200px;  /* Adjust height as desired */
+        font-size: 16px;  /* Increase font size for larger text */
+        padding: 1rem;
+      
+  }
+  
+    
+  
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .form-check{
+    position: relative;
+    bottom: -5rem;
+    right: 25vh;
+
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .form-check-input {
+    height: 1rem;
+    width: 1rem;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    box-sizing: border-box;
+    top: 0;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .form-check-label {
+    vertical-align: baseline;
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: -.05rem;
+    color: inherit; /* Use inherited white color */
+  }
+  
+  .btn.btn-light {
+    color: #fff;
+    background-color: #9999a4; /* Use section background color for button */
+    border-color: transparent; /* Remove border for a cleaner look */
+    border-radius: .25rem;
+    font-size: 1rem;
+    padding: 1rem;
+  
+  }
+  .col-13{
+    position: relative;
+    bottom: -5rem;
+    border: 10px;
+    border-radius: 10px;
+    
+    
+  }
+  
+
+  /* Where We Are Styles */
+.text-white {
+    color: inherit; /* Use inherited white color */
+  }
+  
+  .fas, .fa {
+    font-size: 1.2rem; /* Adjust icon size */
+    margin-right: 10px;
+  }
+  
+  a {
+    color: inherit; /* Use inherited white color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #80bdff; /* Change color on hover */
+  }
+  
+  .my-4 {
+    display: flex;
+    justify-content: center; /* Center social media icons */
+  }
+  
+  .fab {
+    margin-right: 20px; /* Adjust spacing between social media icons */
+  }

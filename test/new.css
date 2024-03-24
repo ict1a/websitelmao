@@ -1,0 +1,223 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('S.jpg') no-repeat center;
+    background-size: 100rem; /* Fallback background size */
+    background-color: 	#fffaf0
+}
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(126, 80, 80);
+}
+
+
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header.header-hidden {
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+}
+
+/* Logo Styles */
+.logo {
+    background: url('logo.jpeg') no-repeat; 
+    width: 100px; 
+    height: 130px;
+    background-size: contain;
+    user-select: none;
+}
+
+/* Navigation Styles */
+.navigation a {
+    position: relative;
+    font-size: 1.5em;
+    color: #000;
+    text-decoration: none;  
+    font-weight: 500;
+    margin-left: 1.9rem; /* Adjusted margin for responsiveness */
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    bottom: -6px;
+    width: 150px;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    margin-right: 15px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation a:hover {
+    background: #506882;
+    color: #C5FFFA;
+}
+
+  #footer {
+    background: transparent;
+    padding: 30px 0;
+    color: #222222;
+    font-size: 1.5em;
+    text-align: center;
+    bottom: -10rem;
+    position:relative;
+    overflow-y: auto;
+ 
+  }
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th:first-child, td:first-child {
+    padding-left: 20px;
+}
+
+th:last-child, td:last-child {
+    padding-right: 20px;
+}
+
+main{
+  position: absolute;
+  margin-inline :auto ;
+  top: 60rem;
+  background-color: 	#fffaf0
+}
+  .valuesr {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #fffff0;
+    padding: 10px;
+    grid-gap: 20px;
+    width: max(100% , min(800px));
+    
+  }
+  .about h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+  }
+  .about p{
+    text-align: center;
+    font-size: 1em;
+    font-family:  'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+  }
+  .values {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 20px; /* Decrease the font size */
+    text-align: center;
+}
+
+  .evalues {
+    background-color:#fffafa;
+    padding: 10px;
+   gap: 20px;
+    
+  }
+  .cvalues {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 20px; /* Decrease the font size */
+    text-align: center;
+  }
+  .eclass {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #fffff0;
+    padding: 10px;
+    grid-gap: 10px; 
+  }
+  main h2{
+    font-weight: bold;
+    font-size: 2em;
+    position: relative;
+    left:  40%;
+    margin-inline: auto ;
+  }
+  .strands {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 20px; /* Decrease the font size */
+    text-align: center;
+  }
+  .hymn {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 20px; /* Decrease the font size */
+    text-align: center;
+  }
+  .ehymn {
+    display: grid;
+    grid-template-columns: 1;
+    background-color: #fffff0;
+    padding: 10px;
+    grid-gap: 10px; 
+  }
+  

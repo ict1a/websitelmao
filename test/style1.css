@@ -1,0 +1,329 @@
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to LEFT, rgb(175, 215, 211) , rgb(123, 198, 167));
+}
+
+header {
+    padding-bottom: 20px;
+    
+}
+#main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+#main-header.header-hidden {
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+}
+
+/* Logo Styles */
+.logo {
+    background: url('logo.jpeg') no-repeat; 
+    width: 100px; 
+    height: 130px;
+    background-size: contain;
+    user-select: none;
+}
+
+/* Navigation Styles */
+.navigation a {
+    position: relative;
+    font-size: 1.5em;
+    right: 5rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: 100;
+    margin-left: 5vh /* Adjusted margin for responsiveness */
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    bottom: -6px;
+    width: 150px;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    margin-right: 15px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation a:hover {
+    background: #506882;
+    color: #C5FFFA;
+}
+
+/* Login Button Styles */
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #020101;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #000;
+    margin-left: 2rem;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #506882;
+    color: #C5FFFA;
+}
+
+
+.head{
+
+    position: relative;
+    bottom: -15rem;
+}
+
+.container {
+    width: 1160px;
+    background-color: white;
+    text-align: left;
+    opacity: 10;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    color: black;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: -15rem;
+}
+.container1{
+    width: 1160px;
+    background-color: white;
+    text-align: left;
+    opacity: 10;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    color: black;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: -15rem;
+}
+.next {
+    text-align: right;
+}
+
+
+.date {
+    text-align: right;
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: black;
+}
+
+input:focus {
+    border-color: black
+}
+
+
+.add input {
+    width: 1200px;
+}
+
+.pnr input {
+    width: 280px;
+}
+
+.fmn input {
+    width: 440px;
+}
+
+.name input {
+    width: 260px;
+}
+
+.ba input {
+    width: 340px;
+}
+
+.me input {
+    width: 432px;
+}
+
+.na input {
+    width: 1000px;
+}
+
+.ca input {
+    width: 690px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 1200px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5 px;
+}
+img {
+    height: 75px;
+    width: 75px;
+    padding-left: 80px;
+    float: left;
+}
+
+.qwe {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.zxc {
+    font-size: 20px;
+    font-style: bold;
+    font-weight: normal;
+}
+
+.fm {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ad {
+    text-align: center;
+    width: 200px;
+}
+
+.center {
+    margin:auto auto;
+    justify-content: center;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+body {
+    padding-left: 30px;
+}
+
+.sign {
+    padding-left: 800px;
+    width: 300px;
+}
+
+.sign input {
+    width: 290px;
+}
+
+.left, th {
+    text-align: left;
+    padding-top: 0px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.left input {
+    width: 500px;
+}
+
+.bottom {
+    width: auto;
+}
+
+.right {
+    width: 300px;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.right1 {
+    text-align: left;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+input[type=submit] {
+    background-color: #911F27;
+    border: 1px solid black;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    padding: 16px 32px;
+    text-decoration: none;
+    text-decoration-color: white;
+    margin: auto auto;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: gray;
+    color: black;
+}
+
+.next {
+    font-size: 20px;
+    color: white;
+    background-color: white;
+    font-style: normal;
+}
+
+.regline{
+    text-align: left;
+    padding-left: 218px;
+}
+
+.regt {
+    text-align: left;
+    padding-left: 250px;
+}
